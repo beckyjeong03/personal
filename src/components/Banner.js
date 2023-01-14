@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-///import headerImg from "../asset/header";
+import headerImg from "../asset/SeekPng.com_astronaut-png_5210550.png";
 
 
 export const Banner = () => {
@@ -53,12 +53,12 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio
                         </span>
-                        <h1> {`Hi, I'm Becky Jeong `}<span className="wrap">{text}</span> </h1>
+                        <h1> {`Hi, I'm Becky Jeong. I am `}<span className="wrap">{text}</span> </h1>
                         <p>This is where random texts comes in</p>
                         <button onClick={()=> console.log('connect')}>Let's connect <ArrowRightCircle size={25}></ArrowRightCircle></button>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
-                        <img src={''} alt="Header Img" />
+                    <Col xs={12} md={3} xl={4}>
+                        <img src={headerImg} alt="Header Img" />
                     </Col>
                 </Row>
             </Container>

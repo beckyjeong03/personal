@@ -2,6 +2,11 @@
 import { Container, Col, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import java from "../asset/java-logo-1.png";
+import htmlcss from "../asset/html.webp";
+import react from "../asset/react.png";
+import javascript from "../asset/js.png";
+
 
 
 
@@ -26,13 +31,38 @@ export const Skills =() => {
       }
     };
 
-    // return {
+    return (
         <section className="skill" id="skills">
         <Container>
-        <Row>
-        <Col>
-        </Col></Row></Container>
+         <Row>
+           <Col>
+           <div className="skill-bx">
+            <h2>Skills</h2>
+              <p>SoftSkils: Communication, time management, dedication, critical thinking, adatation</p>
+            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+              <div className="item">
+                <img src={htmlcss} alt="image" />
+                <h5>HTML/CSS</h5>
+              </div>
+              <div className="item">
+                <img src={react} alt="image" />
+                <h5>Reactjs</h5>
+              </div>
+              <div className="item">
+                <img src={java} alt="image" />
+                <h5>Java</h5>
+              </div>
+              <div className="item">
+                <img src={javascript} alt="image" />
+                <h5>JavaScript</h5>
+              </div>
+            </Carousel>
+           </div>
+           </Col>
+         </Row>
+         </Container>
+         <img className="background-image-left" src={''} />
         </section>
-  //  };
+    )
 
 }
