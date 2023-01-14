@@ -13,7 +13,7 @@ console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
 const contactEmail = nodemailer.createTransport({
-  service: 'outlook',
+  service: 'hotmail',
   auth: {
     user: "bjeong@uwaterloo.ca",
     pass: ""

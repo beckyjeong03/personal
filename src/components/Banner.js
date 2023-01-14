@@ -8,7 +8,7 @@ export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
 
-    const toRotate = [ "Web Developer" , "software Engineer", "UI/UX Designer" ];
+    const toRotate = [ "Computer Science." , "Web Development.", "UI/UX Designer." ];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -50,12 +50,12 @@ export const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7}>
+                    <Col xs={12} md={9} xl={7}>
                         <span className="tagline">Welcome to my Portfolio
                         </span>
-                        <h1> {`Hi, I'm Becky Jeong. I am `}<span className="wrap">{text}</span> </h1>
-                        <p>This is where random texts comes in</p>
-                        <button onClick={()=> console.log('connect')}>Let's connect <ArrowRightCircle size={25}></ArrowRightCircle></button>
+                        <h1> {`Hi, I'm Becky Jeong. I study `}<span className="wrap">{text}</span> </h1>
+                        <p>Currently 1B Computer Science Student at University of Waterloo</p>
+                        {/* <button onClick={()=> console.log('connect')}>Let's connect <ArrowRightCircle size={25}></ArrowRightCircle></button> */}
                     </Col>
                     <Col xs={12} md={3} xl={4}>
                         <img src={headerImg} alt="Header Img" />
