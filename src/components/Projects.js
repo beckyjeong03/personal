@@ -71,12 +71,12 @@ export const Project =()=>{
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills"  className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
-                                <Nav.Link eventKey="first">1</Nav.Link>
+                                <Nav.Link eventKey="first">Project Image</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="second">2</Nav.Link>
+                                <Nav.Link eventKey="second">Project Description</Nav.Link>
                             </Nav.Item><Nav.Item>
-                                <Nav.Link eventKey="third">3</Nav.Link>
+                                <Nav.Link eventKey="third">etc</Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Tab.Content>
@@ -96,14 +96,13 @@ export const Project =()=>{
                             </Tab.Pane>
                             <Tab.Pane eventKey="second"> <Row>
                                     {
-                                        projects2.map((project,index)=>{
-                                            return(
-                                                <ProjectCard
-                                                key={index}
-                                                {...project}
-                                                />
-                                            )
-                                        })
+                                        <section>
+                                       <h1>Hello World</h1> 
+                                       <h3>Personal Project</h3>
+                                       <h5>Developed a website using React.js</h5>
+                                       </section>
+                                            
+                                        
                                     }
                                 </Row></Tab.Pane>
                             <Tab.Pane eventKey="third"> <Row>

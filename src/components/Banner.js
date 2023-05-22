@@ -50,16 +50,18 @@ export const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12} md={9} xl={7}>
+                    {/* <Col xs={12} md={9} xl={7}> */}
                         <span className="tagline">Welcome to my Portfolio
                         </span>
                         <h1> {`Hi, I'm Becky Jeong. I study `}<span className="wrap">{text}</span> </h1>
                         <p>Currently 1B Computer Science Student at University of Waterloo</p>
                         {/* <button onClick={()=> console.log('connect')}>Let's connect <ArrowRightCircle size={25}></ArrowRightCircle></button> */}
-                    </Col>
-                    <Col xs={12} md={3} xl={4}>
+                    {/* </Col> */}
+                    {/* <Col> <h1>green onion</h1></Col> */}
+                     {/* <Col xs={12} md={3} xl={4}>
                         <img src={headerImg} alt="Header Img" />
-                    </Col>
+                    </Col>  */}
+                    
                 </Row>
             </Container>
         </section>
