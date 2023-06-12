@@ -5,7 +5,7 @@ import { ProjectCard } from "./ProjectCard";
 import imageapp from "../asset/Untitled (4).png";
 import weatherapp from "../asset/weatherappp.png";
 import brickbreaker from "../asset/brickbreaker.png";
-import selfdriving from "../asset/brickbreaker.png";
+import selfdriving from "../asset/Self-driving.png";
 
 export const Project =()=>{
 
