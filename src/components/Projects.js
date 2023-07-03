@@ -5,6 +5,7 @@ import { ProjectCard } from "./ProjectCard";
 import imageapp from "../asset/Untitled (4).png";
 import weatherapp from "../asset/weatherappp.png";
 import brickbreaker from "../asset/brickbreaker.png";
+import selfdriving from "../asset/Self-driving.png";
 
 export const Project =()=>{
 
@@ -16,9 +17,9 @@ export const Project =()=>{
             imgUrl: imageapp,
           },
           {
-            title: "Weather App",
-            description: "Design & Development",
-            imgUrl: weatherapp,
+            title: "self-driving Car",
+            description: "Development & Research",
+            imgUrl: selfdriving,
           },
           {
             title: "Brick Breaker",
