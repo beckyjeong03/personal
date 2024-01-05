@@ -70,7 +70,7 @@ input:focus, textarea:focus, select:focus {
 @media (min-width:1700px) {
 	main .container {
 		max-width: 100%;
-		padding: 0 150px;
+		padding: 150px;
 	}
 }
 
@@ -395,6 +395,58 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 /* Projects */
+.tidepool {
+  padding: 120px 0 200px 0;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+}
+
+.tidepool .contents {
+  font-size: 36px;           /* Large font size */
+  font-weight: 100;          /* Light font weight */
+  letter-spacing: 0.8px;     /* Space between letters */
+  line-height: 1.5;          /* Space between lines */
+  margin-bottom: 20px;       /* Space below the element */
+  width: 80%;                /* Element width as 80% of its parent */
+  margin-left: auto;         /* Auto margin on the left */
+  margin-right: auto;        /* Auto margin on the right */
+  display: flex;            /* Display as a block element */
+  justify-content: center;
+  color: white;              /* Text color */
+}
+.tidepool .element{
+  
+}
+
+
+.tidepool img {
+  width: 50%;                 /* Set the width to 50% of the container */
+  object-fit: cover;
+  height: fit-content;
+  box-shadow: 0 7px 20px -6px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;        /* Rounded corners */
+  display: flex;              /* Enable flexbox */
+  justify-content: center;    /* Center horizontally in the flex container */
+  align-items: center;        /* Center vertically in the flex container */
+  margin-left: auto;          /* Auto margin on the left */
+  margin-right: auto;         /* Auto margin on the right */
+}
+
+.tidepool h1{
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  padding: 100px 0 100px 0;
+  width: 70%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  color: white;
+}
+
+
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
@@ -492,7 +544,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 50%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -529,19 +581,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 55px 0px 0px 55px;
 }
-.nav-link#projects-tabs-tab-second {
+/* .nav-link#projects-tabs-tab-second {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-third {
+} */
+.nav-link#projects-tabs-tab-second {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
+  border-radius: 15px;
   overflow: hidden;
   margin-bottom: 24px;
+  width: 100%;
+}
+.image-cover {
+  width: 100%;      /* Set the width as needed */
+  height: 240px;    
+  /* padding-top: 10.00%; */
+  object-fit: cover;
 }
 .proj-imgbx::before {
   content: "";
@@ -556,6 +615,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx:hover::before {
   height: 100%;
 }
+
 .proj-txtx {
   position: absolute;
   text-align: center;
@@ -569,6 +629,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
+  color:#fff
 }
 .proj-txtx h4 {
   font-size: 30px;
@@ -582,6 +643,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 15px;
   letter-spacing: 0.8px;
 }
+.proj-txtx p {
+  font-style: bold;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 0.8px;
+}
 .background-image-right {
   top: 20%;
   position: absolute;
@@ -591,8 +658,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+.contactinfo{
+  padding: 60px 0 100px 0;
+  /* background-size: cover;
+  background-color: #282c34;
+  background-position: center centerw; */
+  /* background: linear-gradient(90.21deg, #282c34 -5.91%, #AA367C 111.58%); */
+
+}
+.contactinfo h1{
+  font-size: 45px;
+  padding-top: 10px;
+  color: #61dafb;
+}
+
+.contactinfo div{
+  font-size: 20px;
+  padding-top:10px;
+  padding-bottom: 0px;
+}
 .footer {
-  padding: 0 0 50px 0;
+  padding: 50px 0 50px 0;
   /* background-image: url('./assets/img/footer-bg.png'); */
   background-position: center center;
   background-size: cover;

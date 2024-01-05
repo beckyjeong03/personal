@@ -1,16 +1,21 @@
 import { Col } from "react-bootstrap";
-import { AlignCenter } from "react-bootstrap-icons";
-export const ProjectCard = ({title,description,imgUrl})=>{
+import { Link } from "react-router-dom";
 
-    return(
+
+export const ProjectCard = ({ title, description, imgUrl, url }) => {
+    return (
         <Col sm={12} md={4}>
-            <div className="proj-imgbx">
-                <img src={imgUrl} />
-                <div className="proj-txtx">
-                    <h4>{title}</h4>
-                    <span>{description}</span>
+            <Link to={url} target="_blank">
+
+                <div className="proj-imgbx">
+                    <img src={imgUrl} className="image-cover" />
+                    <div className="proj-txtx">
+                        <h4>{title}</h4>
+                        <span>{description}</span>
+                    </div>
                 </div>
-            </div>
+            </Link>
+
         </Col>
     )
 }
