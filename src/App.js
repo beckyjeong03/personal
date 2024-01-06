@@ -20,17 +20,18 @@ function App() {
   let routes = useRoutes([
     { path: '/', element: <Home /> },
 
-    { path: '/personal', element: <Home /> },
-    { path: '/work', element: <Work /> },
-    { path: '/tidepool', element: <Tidepool/>},
-    { path: '/Workexperience', element: <WorkDescription/>}
+    // { path: '/personal', element: <Home /> },
+    // { path: '/work', element: <Work /> },
+    // { path: '/tidepool', element: <Tidepool/>},
+    // { path: '/Workexperience', element: <WorkDescription/>}
     // ... other routes
   ]);
 
   return (
     <div>
       <NavBar/>
-      {routes}
+      {/* {routes} */}
+      <Home />
     </div>
   );
 }

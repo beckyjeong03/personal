@@ -9,6 +9,7 @@ import navIcon3 from "../asset/nav-icon3.png";
 export const NavBar = () =>{
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, seScrolled] = useState(false);
+    const [copied, setCopied] = useState("Let's Connect");
 
     useEffect(() => {
         const onScroll =()=>{
@@ -29,9 +30,11 @@ export const NavBar = () =>{
         setActiveLink(value);
     }
 
+ 
     return(
 
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
+
       <Container>
         <Navbar.Brand href="#home"><img src={logo} alt="Logo"></img></Navbar.Brand>
 
@@ -47,10 +50,12 @@ export const NavBar = () =>{
           <span className="navbar-text">
             <div className="social-icon">
                 <a href="https://www.instagram.com/becky_jeong_/"><img src={navIcon1} alt="instagram" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.facebook.com/becky.jeong.7"><img src={navIcon2} alt="Facebook" /></a>
+                <a href="https://www.linkedin.com/in/becky-jeong/"><img src={navIcon3} alt="Linkedin" /></a>
             </div>
-            <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+            <button className="vvd" onClick={() => {
+              navigator.clipboard.writeText("bjeong@uwaterloo.ca");
+              setCopied("Email Copied!")}}><span>{copied}</span></button>
           </span>
         </Navbar.Collapse>
       </Container>

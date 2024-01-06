@@ -9,6 +9,8 @@ import brickbreaker from "../asset/brickbreaker.png";
 import selfdriving from "../asset/Self-driving.png";
 import tidepool from "../asset/Tidepool.png";
 import microsoft from "../asset/microsoft.png";
+import chess from "../asset/chess.png";
+import fishscope from "../asset/fishscope.png";
 
 export const Project =()=>{
 
@@ -16,45 +18,46 @@ export const Project =()=>{
     const projects =[
         {
             title: "Personal Website",
-            description: "Design & Development",
+            description: "React, AWS",
             imgUrl: imageapp,
-            url: "/workdescription"
-          },
-          {
-            title: "self-driving Car",
-            description: "Development & Research",
-            imgUrl: selfdriving,
-            url: "/workdescription"
-
-          },
-          {
-            title: "Brick Breaker",
-            description: "Design & Development",
-           imgUrl: brickbreaker,
-           url: "/workdescription"
-
+            url: "https://www.beckyjeong.com/"
           },
           {
             title: "Chess Game",
-            description: "C++",
-            imgUrl: brickbreaker,
-            url: "/workdescription"
+            description: "C++, XWindow",
+            imgUrl: chess,
+            url: "https://github.com/beckyjeong03/ChessGame/blob/main/README.md"
 
           },
           {
             title: "Tidepool Homepage",
             description: "next.js, AWS, Docker",
             imgUrl: tidepool,
-            url: "/workdescription"
+            url: "https://tidepool.kr/en"
 
           },
           {
             title: "Fishscope Website",
             description: "REST Api, next.js",
-            imgUrl: tidepool,
-            url: "/workdescription"
+            imgUrl: fishscope,
+            url: "https://tidepool.kr/en"
 
-          }
+          },
+          {
+            title: "self-driving Car",
+            description: "Machine Learning, Javascript",
+            imgUrl: selfdriving,
+            url: "https://github.com/beckyjeong03/Self-Driving-Car"
+
+          },
+          {
+            title: "Brick Breaker",
+            description: "Java, OOP",
+           imgUrl: brickbreaker,
+           url: "https://github.com/beckyjeong03/brickbreaker"
+
+          },
+          
           
         ];
         const workExperience =[
@@ -70,26 +73,9 @@ export const Project =()=>{
                 description: "TIDEPOOL",
                 time: "July 2023 - Present", 
                 imgUrl: tidepool,
-                url: "/tidepool",
+                url: "https://tidepool.kr",
               }
             ];
-            const projects3 =[
-                // {
-                //     title: "Personal Website",
-                //     description: "Design & Development",
-                //     imgUrl: imageapp,
-                //   },
-                //   {
-                //     title: "Weather App",
-                //     description: "Design & Development",
-                //     imgUrl: weatherapp,
-                //   },
-                  {
-                    title: "Brick Breaker",
-                    description: "Design & Development",
-                   imgUrl: brickbreaker,
-                  }
-                ];
 
         return(
             <section className="project" id="project">
