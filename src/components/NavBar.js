@@ -49,9 +49,9 @@ export const NavBar = () =>{
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-                <a href="https://www.instagram.com/becky_jeong_/"><img src={navIcon1} alt="instagram" /></a>
-                <a href="https://www.facebook.com/becky.jeong.7"><img src={navIcon2} alt="Facebook" /></a>
-                <a href="https://www.linkedin.com/in/becky-jeong/"><img src={navIcon3} alt="Linkedin" /></a>
+                <a href="https://www.instagram.com/becky_jeong_/" target="_blank"><img src={navIcon1} alt="instagram" /></a>
+                <a href="https://www.facebook.com/becky.jeong.7" target="_blank"><img src={navIcon2} alt="Facebook" /></a>
+                <a href="https://www.linkedin.com/in/becky-jeong/" target="_blank"><img src={navIcon3} alt="Linkedin" /></a>
             </div>
             <button className="vvd" onClick={() => {
               navigator.clipboard.writeText("bjeong@uwaterloo.ca");
