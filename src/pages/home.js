@@ -14,10 +14,10 @@ export const Home = () => {
       <Skills />
       <Project />
       <Contact />
-      <ContactInfo/>
+      <ContactInfo />
       {/* <Footer /> */}
     </div>
   );
-}
+};
 
 // export default home;

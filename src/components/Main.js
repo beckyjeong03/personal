@@ -14,7 +14,6 @@
 
 // export default Main;
 
-
 // const Main = () => {
 //   return (
 //     <Routes> {/* The Switch decides which component to show based on the current URL.*/}
@@ -25,4 +24,3 @@
 // }
 
 // export default Main;
-

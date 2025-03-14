@@ -9,11 +9,9 @@ export const WorkDescription = () => {
   return (
     <div className="App">
       <NavBar />
-      <div>
-        Work description
-      </div>
+      <div>Work description</div>
     </div>
   );
-}
+};
 
 // export default Work;

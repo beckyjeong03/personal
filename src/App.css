@@ -755,3 +755,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+.animated-text-wrapper {
+  min-height: 40px;  /* Adjust this value based on your text size */
+  position: relative;
+  display: inline-block;
+}
+
+.wrap {
+  display: inline-block;
+}

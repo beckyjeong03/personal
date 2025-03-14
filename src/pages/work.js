@@ -15,6 +15,6 @@ export const Work = () => {
       <Footer />
     </div>
   );
-}
+};
 
 // export default Work;
