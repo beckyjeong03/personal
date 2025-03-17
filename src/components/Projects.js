@@ -75,7 +75,7 @@ export const Project = () => {
     {
       worktitle: 'Full-Stack Developer',
       description: 'TIDEPOOL',
-      time: 'July 2023 - Present',
+      time: 'July 2023 - Jan 2024',
       imgUrl: tidepool,
       url: 'https://tidepool.kr',
     },

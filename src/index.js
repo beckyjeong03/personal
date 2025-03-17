@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
-
 import { createRoot } from 'react-dom/client';
 
 const root = createRoot(document.getElementById('root'));
@@ -14,7 +13,6 @@ root.render(
     <App />
   </Router>
 );
-
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(

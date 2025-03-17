@@ -11,8 +11,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { useRoutes, Routes, Route } from 'react-router-dom';
 
-import {Home} from './pages/home';
-import {Work} from './pages/work';
+import { Home } from './pages/home';
+import { Work } from './pages/work';
 import { WorkDescription } from './pages/WorkDescription';
 import { Tidepool } from './pages/Work/tidepool';
 
@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div>
-      <NavBar/>
+      <NavBar />
       {/* {routes} */}
       <Home />
     </div>
